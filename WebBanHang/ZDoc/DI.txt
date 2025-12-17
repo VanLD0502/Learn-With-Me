@@ -1,0 +1,7 @@
+using (var scope = app.Services.CreateScope())
+{
+    var emailService = scope.ServiceProvider
+                            .GetRequiredService<EmailService>();
+
+    emailService.Send("Hello");
+}// Lấy một class từ services theo scope

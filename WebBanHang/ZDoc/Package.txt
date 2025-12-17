@@ -1,0 +1,8 @@
+dotnet add package Microsoft.EntityFrameworkCore.Tools --version 8.0.8
+dotnet add package Microsoft.EntityFrameworkCore --version 8.0.8
+dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 8.0.8
+dotnet tool install --global dotnet-ef --version 8.0.8
+
+
+dotnet list package

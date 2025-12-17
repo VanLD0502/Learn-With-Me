@@ -1,0 +1,13 @@
+dotnet ef migrations add InitialCreate
+dotnet ef database update
+dotnet ef database update InitialCreate
+dotnet ef migrations list
+Remove migration (CỰC NGUY HIỂM nếu đã apply)
+dotnet ef migrations remove (nên dùng khi chưa update database)
+
+//rollback
+dotnet ef database update LastGoodMigration
+
+dotnet ef database drop (xóa)
+dotnet ef database drop -f
+
